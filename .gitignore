@@ -1,0 +1,13 @@
+# Xcode
+.DS_Store
+*.xcuserstate
+*.xcworkspace
+*.xcconfig
+
+# Swift Package Manager
+/.build
+
+# CocoaPods
+Pods
+Podfile.lock
+
