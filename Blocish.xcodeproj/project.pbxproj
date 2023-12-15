@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		93CFF23F2B2B91D200BA7D7C /* BlocishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF23E2B2B91D200BA7D7C /* BlocishApp.swift */; };
-		93CFF2412B2B91D200BA7D7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2402B2B91D200BA7D7C /* ContentView.swift */; };
 		93CFF2432B2B91D300BA7D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CFF2422B2B91D300BA7D7C /* Assets.xcassets */; };
 		93CFF2462B2B91D300BA7D7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CFF2452B2B91D300BA7D7C /* Preview Assets.xcassets */; };
 		93CFF2502B2B91D400BA7D7C /* BlocishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF24F2B2B91D400BA7D7C /* BlocishTests.swift */; };
 		93CFF25A2B2B91D400BA7D7C /* BlocishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2592B2B91D400BA7D7C /* BlocishUITests.swift */; };
 		93CFF25C2B2B91D400BA7D7C /* BlocishUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF25B2B2B91D400BA7D7C /* BlocishUITestsLaunchTests.swift */; };
+		93CFF26D2B2B946A00BA7D7C /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF26C2B2B946A00BA7D7C /* TodosView.swift */; };
+		93CFF26F2B2B947200BA7D7C /* TodosBloc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF26E2B2B947200BA7D7C /* TodosBloc.swift */; };
+		93CFF2712B2B948900BA7D7C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2702B2B948900BA7D7C /* HomeView.swift */; };
+		93CFF2762B2B94C400BA7D7C /* TodosApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2752B2B94C400BA7D7C /* TodosApi.swift */; };
+		93CFF2792B2B95C900BA7D7C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2782B2B95C900BA7D7C /* SettingsView.swift */; };
+		93CFF27D2B2B96A000BA7D7C /* TodosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF27C2B2B96A000BA7D7C /* TodosRepository.swift */; };
+		93CFF27F2B2B96A800BA7D7C /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF27E2B2B96A800BA7D7C /* AuthRepository.swift */; };
+		93CFF2812B2B96BB00BA7D7C /* SettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2802B2B96BB00BA7D7C /* SettingsRepository.swift */; };
+		93CFF2842B2B97AC00BA7D7C /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2832B2B97AC00BA7D7C /* Todo.swift */; };
+		93CFF2862B2B983800BA7D7C /* InMemoryTodosStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2852B2B983800BA7D7C /* InMemoryTodosStore.swift */; };
+		93CFF2882B2B9F5600BA7D7C /* TodosState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2872B2B9F5600BA7D7C /* TodosState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,6 @@
 /* Begin PBXFileReference section */
 		93CFF23B2B2B91D200BA7D7C /* Blocish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CFF23E2B2B91D200BA7D7C /* BlocishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocishApp.swift; sourceTree = "<group>"; };
-		93CFF2402B2B91D200BA7D7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93CFF2422B2B91D300BA7D7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93CFF2452B2B91D300BA7D7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93CFF24B2B2B91D400BA7D7C /* BlocishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +53,17 @@
 		93CFF2552B2B91D400BA7D7C /* BlocishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CFF2592B2B91D400BA7D7C /* BlocishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocishUITests.swift; sourceTree = "<group>"; };
 		93CFF25B2B2B91D400BA7D7C /* BlocishUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocishUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93CFF26C2B2B946A00BA7D7C /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
+		93CFF26E2B2B947200BA7D7C /* TodosBloc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosBloc.swift; sourceTree = "<group>"; };
+		93CFF2702B2B948900BA7D7C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		93CFF2752B2B94C400BA7D7C /* TodosApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosApi.swift; sourceTree = "<group>"; };
+		93CFF2782B2B95C900BA7D7C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		93CFF27C2B2B96A000BA7D7C /* TodosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosRepository.swift; sourceTree = "<group>"; };
+		93CFF27E2B2B96A800BA7D7C /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		93CFF2802B2B96BB00BA7D7C /* SettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepository.swift; sourceTree = "<group>"; };
+		93CFF2832B2B97AC00BA7D7C /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		93CFF2852B2B983800BA7D7C /* InMemoryTodosStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryTodosStore.swift; sourceTree = "<group>"; };
+		93CFF2872B2B9F5600BA7D7C /* TodosState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +114,10 @@
 		93CFF23D2B2B91D200BA7D7C /* Blocish */ = {
 			isa = PBXGroup;
 			children = (
+				93CFF2742B2B949E00BA7D7C /* API */,
+				93CFF2692B2B938700BA7D7C /* Repositories */,
+				93CFF2682B2B938300BA7D7C /* UI */,
 				93CFF23E2B2B91D200BA7D7C /* BlocishApp.swift */,
-				93CFF2402B2B91D200BA7D7C /* ContentView.swift */,
 				93CFF2422B2B91D300BA7D7C /* Assets.xcassets */,
 				93CFF2442B2B91D300BA7D7C /* Preview Content */,
 			);
@@ -125,6 +147,86 @@
 				93CFF25B2B2B91D400BA7D7C /* BlocishUITestsLaunchTests.swift */,
 			);
 			path = BlocishUITests;
+			sourceTree = "<group>";
+		};
+		93CFF2682B2B938300BA7D7C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				93CFF2772B2B95BE00BA7D7C /* Settings */,
+				93CFF26B2B2B943C00BA7D7C /* Todos */,
+				93CFF26A2B2B939700BA7D7C /* Home */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		93CFF2692B2B938700BA7D7C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				93CFF27C2B2B96A000BA7D7C /* TodosRepository.swift */,
+				93CFF27E2B2B96A800BA7D7C /* AuthRepository.swift */,
+				93CFF2802B2B96BB00BA7D7C /* SettingsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		93CFF26A2B2B939700BA7D7C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				93CFF2702B2B948900BA7D7C /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		93CFF26B2B2B943C00BA7D7C /* Todos */ = {
+			isa = PBXGroup;
+			children = (
+				93CFF28A2B2BEA0000BA7D7C /* Bloc */,
+				93CFF2892B2BE9F200BA7D7C /* Views */,
+				93CFF26C2B2B946A00BA7D7C /* TodosView.swift */,
+			);
+			path = Todos;
+			sourceTree = "<group>";
+		};
+		93CFF2742B2B949E00BA7D7C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				93CFF2822B2B97A200BA7D7C /* Models */,
+				93CFF2752B2B94C400BA7D7C /* TodosApi.swift */,
+				93CFF2852B2B983800BA7D7C /* InMemoryTodosStore.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		93CFF2772B2B95BE00BA7D7C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				93CFF2782B2B95C900BA7D7C /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		93CFF2822B2B97A200BA7D7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93CFF2832B2B97AC00BA7D7C /* Todo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93CFF2892B2BE9F200BA7D7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93CFF28A2B2BEA0000BA7D7C /* Bloc */ = {
+			isa = PBXGroup;
+			children = (
+				93CFF26E2B2B947200BA7D7C /* TodosBloc.swift */,
+				93CFF2872B2B9F5600BA7D7C /* TodosState.swift */,
+			);
+			path = Bloc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +359,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93CFF2412B2B91D200BA7D7C /* ContentView.swift in Sources */,
+				93CFF27F2B2B96A800BA7D7C /* AuthRepository.swift in Sources */,
+				93CFF27D2B2B96A000BA7D7C /* TodosRepository.swift in Sources */,
+				93CFF2792B2B95C900BA7D7C /* SettingsView.swift in Sources */,
+				93CFF26D2B2B946A00BA7D7C /* TodosView.swift in Sources */,
 				93CFF23F2B2B91D200BA7D7C /* BlocishApp.swift in Sources */,
+				93CFF2812B2B96BB00BA7D7C /* SettingsRepository.swift in Sources */,
+				93CFF2862B2B983800BA7D7C /* InMemoryTodosStore.swift in Sources */,
+				93CFF2712B2B948900BA7D7C /* HomeView.swift in Sources */,
+				93CFF2882B2B9F5600BA7D7C /* TodosState.swift in Sources */,
+				93CFF2762B2B94C400BA7D7C /* TodosApi.swift in Sources */,
+				93CFF2842B2B97AC00BA7D7C /* Todo.swift in Sources */,
+				93CFF26F2B2B947200BA7D7C /* TodosBloc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
