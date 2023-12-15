@@ -19,11 +19,12 @@
 		93CFF2762B2B94C400BA7D7C /* TodosApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2752B2B94C400BA7D7C /* TodosApi.swift */; };
 		93CFF2792B2B95C900BA7D7C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2782B2B95C900BA7D7C /* SettingsView.swift */; };
 		93CFF27D2B2B96A000BA7D7C /* TodosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF27C2B2B96A000BA7D7C /* TodosRepository.swift */; };
-		93CFF27F2B2B96A800BA7D7C /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF27E2B2B96A800BA7D7C /* AuthRepository.swift */; };
+		93CFF27F2B2B96A800BA7D7C /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF27E2B2B96A800BA7D7C /* AuthenticationRepository.swift */; };
 		93CFF2812B2B96BB00BA7D7C /* SettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2802B2B96BB00BA7D7C /* SettingsRepository.swift */; };
 		93CFF2842B2B97AC00BA7D7C /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2832B2B97AC00BA7D7C /* Todo.swift */; };
 		93CFF2862B2B983800BA7D7C /* InMemoryTodosStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2852B2B983800BA7D7C /* InMemoryTodosStore.swift */; };
 		93CFF2882B2B9F5600BA7D7C /* TodosState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CFF2872B2B9F5600BA7D7C /* TodosState.swift */; };
+		93CFF2902B2BEDD500BA7D7C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 93CFF28F2B2BEDD500BA7D7C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,11 +60,12 @@
 		93CFF2752B2B94C400BA7D7C /* TodosApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosApi.swift; sourceTree = "<group>"; };
 		93CFF2782B2B95C900BA7D7C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		93CFF27C2B2B96A000BA7D7C /* TodosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosRepository.swift; sourceTree = "<group>"; };
-		93CFF27E2B2B96A800BA7D7C /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		93CFF27E2B2B96A800BA7D7C /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		93CFF2802B2B96BB00BA7D7C /* SettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepository.swift; sourceTree = "<group>"; };
 		93CFF2832B2B97AC00BA7D7C /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		93CFF2852B2B983800BA7D7C /* InMemoryTodosStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryTodosStore.swift; sourceTree = "<group>"; };
 		93CFF2872B2B9F5600BA7D7C /* TodosState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosState.swift; sourceTree = "<group>"; };
+		93CFF28F2B2BEDD500BA7D7C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		93CFF2322B2B91D200BA7D7C = {
 			isa = PBXGroup;
 			children = (
+				93CFF28F2B2BEDD500BA7D7C /* README.md */,
 				93CFF23D2B2B91D200BA7D7C /* Blocish */,
 				93CFF24E2B2B91D400BA7D7C /* BlocishTests */,
 				93CFF2582B2B91D400BA7D7C /* BlocishUITests */,
@@ -163,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				93CFF27C2B2B96A000BA7D7C /* TodosRepository.swift */,
-				93CFF27E2B2B96A800BA7D7C /* AuthRepository.swift */,
+				93CFF27E2B2B96A800BA7D7C /* AuthenticationRepository.swift */,
 				93CFF2802B2B96BB00BA7D7C /* SettingsRepository.swift */,
 			);
 			path = Repositories;
@@ -333,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CFF2902B2BEDD500BA7D7C /* README.md in Resources */,
 				93CFF2462B2B91D300BA7D7C /* Preview Assets.xcassets in Resources */,
 				93CFF2432B2B91D300BA7D7C /* Assets.xcassets in Resources */,
 			);
@@ -359,7 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93CFF27F2B2B96A800BA7D7C /* AuthRepository.swift in Sources */,
+				93CFF27F2B2B96A800BA7D7C /* AuthenticationRepository.swift in Sources */,
 				93CFF27D2B2B96A000BA7D7C /* TodosRepository.swift in Sources */,
 				93CFF2792B2B95C900BA7D7C /* SettingsView.swift in Sources */,
 				93CFF26D2B2B946A00BA7D7C /* TodosView.swift in Sources */,
